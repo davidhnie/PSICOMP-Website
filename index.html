@@ -1,0 +1,98 @@
+---
+layout: default
+---
+
+<ul class="nav-main">
+    <li><a href="#home" class="is-current">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#sponsors">Sponsors</a></li>
+    <li><a class="button nav-main-apply" href="{{ site.apply_href }}">Apply</a></li>
+</ul>
+
+<div id="home" class="full-height center splash section text-light">
+    <div class="splash-row logo">
+        <!-- 50% scale -->
+        <img src="/img/logo.png" width="285" height="293" />
+        <h1>PSICOMP</h1>
+    </div>
+
+    <div class="splash-text">
+        <h2>Princeton University's</h2>
+        <h3>Annual Social Venture Competition</h3>
+    </div>
+
+    <div class="splash-row"><a class="button apply-button" href="{{ site.apply_href }}">Apply!</a></div>
+
+    <div class="splash-row"><a class="arrow-down" href="#about">&#x2335;</a></div>
+</div>
+
+<div id="about" class="section">
+    <div class="layout-body">
+        <h2 class="text-block-title">About</h2>
+
+        <p>PSICOMP (Princeton Social Impact Competition) is Princeton University’s annual social venture competition hosted by Princeton Social Innovation. Our goal is to provide bright, motivated entrepreneurs with the resources and connections they need to create social change. We’re looking for disruptive, innovative ideas that have sustainable, measurable impact. We believe that anybody is capable of fostering social innovation.</p>
+
+        <h3>Timeline</h3>
+        <ul>
+            <li>First round application deadline: February 26</li>
+            <li>Semifinal round: late-March</li>
+            <li>Final round: April 28 6:00-8:00 pm</li>
+	    <ul>
+	      <li>Releaf</li>
+	      <li>Flux Marine</li>
+	      <li>Versabio</li>
+	      <li>Agitators for Humanity</li>
+	      <li>Homeworks</li>
+	    </ul>
+        </ul>
+    </div>
+</div>
+
+<div id="process" class="section">
+    <div class="layout-body">
+        <h2 class="text-block-title">Process</h2>
+
+        <p>PSICOMP is broken into three rounds. The first round is application-based, in which founders will submit a short description and video pitch of their idea. Applications will be remotely screened by several first-round judges. In March, the top ten teams will be named semi-finalists.</p>
+
+        <p>Each semi-finalist team will be paired with a mentor, who will provide team members with feedback and guidance. Semi-finalists will then submit pitch decks, which will be remotely judged by several semi-final round judges. Note that judges are looking for development milestones post first round application. We want to see that teams are developing and refining their products. In early April, five teams will be selected as national finalists.</p>
+
+        <p>The final round will take place in late April on Princeton’s campus. National finalists will be flown out and pitch their venture in a 10-15 minute presentation to a panel of judges. The top three finalists will be awarded funding.</p>
+    </div>
+</div>
+
+<div id="faq" class="section">
+    <div class="layout-body">
+        <h2 class="text-block-title">FAQ</h2>
+
+        <h3 class="faq-question">What exactly counts as a “social venture”?</h3>
+        <p>We don’t have specific requirements that dictate whether or not your idea is considered a social venture, but keep in mind that social impact is a core component by which your application will be judged. A venture in which social impact is inherent to its mission will be more highly ranked than a venture that just includes some pro-bono, charity aspect its business plan.</p>
+        
+        <h3 class="faq-question">Who can participate?</h3>
+        <p>Teams of 1-4 undergraduate or graduate students currently enrolled at Princeton University.</p>
+        
+        <h3 class="faq-question">When are first round applications due?</h3>
+        <p>First round applications are due on February 26th.</p>
+        
+        <h3 class="faq-question">What is the format of the video pitch?</h3>
+        <p>Please follow guidelines set by <a href="https://www.ycombinator.com/video/" target="_blank">Y Combinator</a>.</p>
+
+        <h3 class="faq-question">I still have more questions!</h3>
+        <p>Email us anytime at <a href="mailto:ashi@princeton.edu">ashi@princeton.edu</a> or <a href="mailto:mmshi@princeton.edu">mmshi@princeton.edu</a>.</p>
+    </div>
+</div>
+
+<div id="sponsors" class="section">
+    <div class="layout-body">
+        <h2 class="text-block-title">Sponsors</h2>
+
+        <div class="sponsors center">
+            {% for sponsor in site.data.sponsors %}
+            <a class="sponsor-item" href="{{ sponsor.url }}" target="_blank" title="{{ sponsor.name }}"><img src="/img/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}"/></a>
+            {% endfor %}
+        </div>
+
+        <p class="center"><em>Interested in sponsoring? Email us at <a href="mailto:mmshi@princeton.edu">mmshi@princeton.edu!</a></em></p>
+    </div>
+</div>
